@@ -26,6 +26,7 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
+    "console-dot-frog": "^1.0.1",
     "express": "^4.17.1"
   }
 }
