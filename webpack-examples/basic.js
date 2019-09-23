@@ -1,5 +1,10 @@
 import suma from './test'
+import render from './render'
 
 console.log('Hello world!!')
 
-suma(2, 3)
+const template = () => `
+  <div class="example"> Lorem ipsom dolor</div>
+`
+
+render(template(), document.body)
