@@ -1,12 +1,14 @@
 // import suma from './test'
 import Cookie from 'js-cookie'
+import moment from 'moment'
 import render from './render'
 import 'console-dot-frog'
 
 console.log('Hello world!!')
 
 const template = () => `
-  <div class="example"> Lorem ipsom dolor</div>
+  <div class="example"> Lorem ipsom dolor
+  ${moment().format('YYYY')}</div>
 `
 
 Cookie.set('value', 123)
