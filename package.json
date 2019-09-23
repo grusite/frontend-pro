@@ -1,0 +1,29 @@
+{
+  "name": "frontend-pro",
+  "version": "1.0.0",
+  "description": "KC frontend pro webpack ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "./node_modules/.bin/webpack"
+  },
+  "keywords": [
+    "webpack",
+    "frontend",
+    "keepcoding",
+    "tvmaze",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grusite/frontend-pro.git"
+  },
+  "author": "Jorge Martín Oliver (jorge.martin.oliver@vodafone.com",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.40.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
