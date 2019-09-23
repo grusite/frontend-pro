@@ -3,7 +3,7 @@
 import moment from 'moment'
 import render from './render'
 import 'console-dot-frog'
-import 'style.css'
+import './styles.css'
 
 console.log('Hello world!!')
 
