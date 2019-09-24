@@ -5,6 +5,7 @@ import render from './render'
 import 'console-dot-frog'
 import footerStyle from './footer.css'
 import style from './styles.css'
+import './scss/content.scss'
 
 const template = () => `
   <div class="${style.container}"> Lorem ipsom dolor
