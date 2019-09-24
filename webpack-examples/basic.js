@@ -3,16 +3,20 @@
 import moment from 'moment'
 import render from './render'
 import 'console-dot-frog'
-import './styles.css'
-
-console.log('Hello world!!')
+import footerStyle from './footer.css'
+import style from './styles.css'
 
 const template = () => `
-  <div class="example"> Lorem ipsom dolor
+  <div class="${style.container}"> Lorem ipsom dolor
   ${moment().format('YYYY')}</div>
 `
 
 // Cookie.set('value', 123)
 
+const footer = `
+  <footer class="${footerStyle.container}"> This is a footer </footer>
+`
+
 console.frog('Awesome!!!')
-render(template(), document.body)
+// render(template(), document.body)
+render(`${template()} ${footer}`, document.body)
