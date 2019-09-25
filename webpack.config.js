@@ -6,10 +6,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   devtool: 'cheap-eval-source-map',
   mode: 'development',
-  entry: path.join(__dirname, 'webpack-examples', 'basic.js'),
+  entry: ['@babel/polyfill', path.join(__dirname, 'src', 'index.js')],
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: 'bundle[hash].js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -20,7 +21,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: false,
             },
           },
         ],
@@ -43,14 +44,15 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new htmlWebpackPlugin({
       filename: 'index.html',
-      template: path.join(__dirname, 'webpack-examples', 'index.html'),
+      template: path.join(__dirname, 'src', 'assets', 'index.html'),
     }),
   ],
   devServer: {
     port: 3000,
-    contentBase: path.join(__dirname, 'webpack-examples'),
+    contentBase: path.join(__dirname, 'src'),
     overlay: true,
-    open: true,
+    open: false,
     hot: true,
+    historyApiFallback: true,
   },
 }

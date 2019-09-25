@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'reset';
+@import 'button';
+@import 'loader';
+@import 'input';
+@import 'card';
+@import 'icon';
+@import 'detail';
+@import 'mainSection';
+@import 'navbar';
+
+* {
+  font-family: 'Roboto', Verdana;
+}
+
+main {
+  margin-top: 100px;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
