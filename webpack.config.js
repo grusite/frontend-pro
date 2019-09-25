@@ -42,7 +42,7 @@ module.exports = {
         use: {
           loader: 'url-loader',
           options: {
-            name: '{path][name].[ext]',
+            name: '[name].[ext]',
           },
         },
       },
