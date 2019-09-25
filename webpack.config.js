@@ -38,11 +38,11 @@ module.exports = {
         },
       },
       {
-        test: /\jpe?g|png|gif)$/,
+        test: /\.(jpe?g|png|gif)$/,
         use: {
-          loader: 'file-loader',
+          loader: 'url-loader',
           options: {
-            name: '[name].[ext]',
+            name: '{path][name].[ext]',
           },
         },
       },
