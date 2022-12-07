@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "console-dot-frog": "^1.0.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "js-cookie": "^2.2.1",
     "moment": "^2.24.0",
     "page": "^1.11.4"
